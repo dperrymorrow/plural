@@ -1,0 +1,35 @@
+{
+  "name": "plural",
+  "version": "1.0.0",
+  "description": "plural collective website",
+  "main": "index.js",
+  "scripts": {
+    "scrape": "node scripts/get-insta.js",
+    "build": "node scripts/build.js",
+    "dev": "http-server docs -c-1",
+    "watch": "nodemon --watch _src --ext ejs,stylus,js,json scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dperrymorrow/plural.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dperrymorrow/plural/issues"
+  },
+  "homepage": "https://github.com/dperrymorrow/plural#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "image-downloader": "^4.0.2",
+    "instagram-web-api": "^2.2.2",
+    "stylus": "^0.54.8"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "http-server": "^0.12.3",
+    "nodemon": "^2.0.7"
+  }
+}

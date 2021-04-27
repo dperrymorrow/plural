@@ -1,0 +1,11 @@
+
+
+<div class="row polaroid-grid no-gutter">
+  <% instagram.forEach(post => { %>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="polaroid" style="background-image: url('<%= post.img %>')">
+        <a class="caption" target="_blank" href="<%= post.url %>">View on Instagram</a>
+      </div>
+    </div>
+  <% }) %>
+</div>

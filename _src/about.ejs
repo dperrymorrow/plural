@@ -1,0 +1,50 @@
+<html lang="en" dir="ltr">
+
+<%- include("_partials/head", { title: "Plural Collective | About" }) %>
+
+<body>
+  <%- include("_partials/header") %>
+
+  <section class="content">
+    <h1>Plural Collective Makers </h1>
+
+    <p>
+      <em>Brief introduction of what Plural Collective is...</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <div class="bio-container row">
+      <% bios.forEach(bio => {%>
+
+        <div class="col-lg-3 col-md-6 col-xs-12">
+          <div class="bio">
+
+            <% if (bio.img) { %>
+              <div class="polaroid single" style="background-image: url('<%= bio.img %>')">
+                <% if (bio.website) { %>
+                  <a class="caption" target="_blank" href="<%= bio.website %>"><%= bio.website.split("www.")[1] %></a>
+                <% } %>
+              </div>
+            <% } %>
+
+            <div class="copy">
+              <h3><%= bio.name %></h3>
+              <p class="description">
+                <%= bio.description %>
+              </p>
+
+              <% if (bio.website) { %>
+                <a href="<%= bio.website %>" target="_blank"><%= bio.website.split("www.")[1] %></a>
+              <% } %>
+              <% if (bio.instagram) { %>
+                <a href="https://instagram.com/<%= bio.instagram %>" target="_blank">@<%= bio.instagram %></a>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+
+  </section>
+
+  </body>
+</html>

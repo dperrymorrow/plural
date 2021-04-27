@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Canary Girls Coffee",
+    "description": "Canary Girls Coffee is a boutique coffee roaster based in Portland, Oregon. We source the green beans of our favorite single-origin coffees from around teh world and roast them to order in small batches.",
+    "website": "http://www.canarygirlcoffee.com",
+    "img": "images/bios/canary.jpeg",
+    "instagram": "canarygirlscoffee"
+  },
+  {
+    "name": "Silly Daisy",
+    "description": "A maker of children's clothing and accessories and a retailer of products from small, environmentally-conscious and ethically-run businesses.",
+    "website": "https://www.sillydaisy.com",
+    "img": "images/bios/silly-daisy.jpeg",
+    "instagram": "sillydaisy"
+  },
+  {
+    "name": "Modern Madini",
+    "description": "At Modern Madini we hand craft metal jewelry, accessories and sculpture one at a time with human hands. Every piece that you purchase is made with the highest quality products and intention. Focusing on empowerment and exemplifications of nature.",
+    "website": "https://www.modernmadini.com",
+    "img": "images/bios/modern-madini.jpeg",
+    "instagram": "modernmadini"
+  },
+  {
+    "name": "Homestead + House",
+    "description": "Artisan apothecary products for you and your home. Made in small batches in Portland, Oregon using natural ingredients we strive to elevate your everyday routines with artfully aromatic products",
+    "website": "http://www.homesteadhousepdx.com",
+    "img": "images/bios/homestead.jpeg",
+    "instagram": "homestead.house"
+  }
+]
