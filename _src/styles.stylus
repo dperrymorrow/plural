@@ -170,6 +170,11 @@ section
   p
     line-height: 2rem
 
+img.insta-logo
+  height: 30px
+  width: auto
+  margin: 0.5rem
+
 h1, h2, h3, h4, h5, h6
   font-weight: bold
   color: $grayDark
