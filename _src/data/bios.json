@@ -7,11 +7,11 @@
     "instagram": "canarygirlscoffee"
   },
   {
-    "name": "Silly Daisy",
-    "description": "A maker of children's clothing and accessories and a retailer of products from small, environmentally-conscious and ethically-run businesses.",
-    "website": "https://www.sillydaisy.com",
-    "img": "images/bios/silly-daisy.jpeg",
-    "instagram": "sillydaisy"
+    "name": "Homestead + House",
+    "description": "Artisan apothecary products for you and your home. Made in small batches in Portland, Oregon using natural ingredients we strive to elevate your everyday routines with artfully aromatic products",
+    "website": "http://www.homesteadhousepdx.com",
+    "img": "images/bios/homestead.jpeg",
+    "instagram": "homestead.house"
   },
   {
     "name": "Modern Madini",
@@ -21,10 +21,17 @@
     "instagram": "modernmadini"
   },
   {
-    "name": "Homestead + House",
-    "description": "Artisan apothecary products for you and your home. Made in small batches in Portland, Oregon using natural ingredients we strive to elevate your everyday routines with artfully aromatic products",
-    "website": "http://www.homesteadhousepdx.com",
-    "img": "images/bios/homestead.jpeg",
-    "instagram": "homestead.house"
+    "name": "Silly Daisy",
+    "description": "A maker of children's clothing and accessories and a retailer of products from small, environmentally-conscious and ethically-run businesses.",
+    "website": "https://www.sillydaisy.com",
+    "img": "images/bios/silly-daisy.jpeg",
+    "instagram": "sillydaisy"
+  },
+  {
+    "name": "Tree to Table",
+    "description": "At Tree to Table we salvage urban trees in and around Portland, Oregon. We slab, mill, process and dry over a multi-year process. Specializing in re-purposing and creating live edge tables, shelves, charcuterie boards, and wood art pieces.",
+    "website": "https://www.treetotablepdx.com/",
+    "img": "images/bios/tree-to-table.jpg",
+    "instagram": "TreeToTable.pdx"
   }
 ]
