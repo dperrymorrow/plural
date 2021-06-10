@@ -49,6 +49,9 @@ nav a:hover {
   color: #fff;
   text-decoration: none;
 }
+p.description {
+  line-height: 1.4rem;
+}
 .header .logo {
   height: 80px;
   width: auto;
