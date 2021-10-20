@@ -1,0 +1,33 @@
+<html lang="en" dir="ltr">
+
+<%- include("_partials/head", { title: "Plural Collective | About" }) %>
+<body>
+  <%- include("_partials/header") %>
+  <section class="content workshop">
+
+    <div class="swiper-container" id="gallery">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <% workshop.gallery.forEach(photo => {%>
+          <div class="swiper-slide">
+            <img src="<%= photo %>?version=<%= meta.version %>"/>
+          </div>
+        <% }) %>
+      </div>
+
+      <button class="swiper-plugin-navigation-prevEl">❮ Prev</button>
+      <button class="swiper-plugin-navigation-nextEl">Next ❯</button>
+    </div>
+
+    <h1><%= workshop.headline %></h1>
+
+    <p class="workshop-description"><%= workshop.full %></p>
+    <a class="checkout" href="<%= workshop.checkoutUrl %>">View schedule / purchase</a>
+  </section>
+
+
+  <%- include("_partials/slider") %>
+
+  </body>
+</html>

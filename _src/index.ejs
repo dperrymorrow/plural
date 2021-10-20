@@ -4,13 +4,31 @@
   <body>
     <%- include("_partials/header") %>
 
+
     <div class="row no-gutter polaroid-grid">
       <% grid.forEach(photo => {%>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="polaroid" style="background-image: url('<%= photo %>?version=1.1')"></div>
+          <div class="polaroid" style="background-image: url('<%= photo %>?version=<%= meta.version %>')"></div>
         </div>
       <% }) %>
     </div>
+
+
+  <!--
+  <div class="swiper-container" id="gallery">
+    <div class="swiper-wrapper">
+      <% grid.forEach(photo => {%>
+        <div class="swiper-slide">
+          <img src="<%= photo %>?version=<%= meta.version %>"/>
+        </div>
+      <% }) %>
+    </div>
+
+    <button class="swiper-plugin-navigation-prevEl">❮ Prev</button>
+    <button class="swiper-plugin-navigation-nextEl">Next ❯</button>
+  </div>
+  -->
+
 
     <section class="content">
       <h1>Welcome to Plural Collective </h1>

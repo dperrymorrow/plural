@@ -19,7 +19,7 @@
           <div class="bio">
 
             <% if (bio.img) { %>
-              <div class="polaroid single" style="background-image: url('<%= bio.img %>')">
+              <div class="polaroid single" style="background-image: url('<%= bio.img %>?version=${meta.version}')">
                 <% if (bio.website) { %>
                   <a class="caption" target="_blank" href="<%= bio.website %>"><%= bio.website.split("www.")[1] %></a>
                 <% } %>

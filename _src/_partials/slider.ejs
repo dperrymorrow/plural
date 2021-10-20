@@ -1,0 +1,25 @@
+<script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/lazyload.min.js"></script>
+<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
+
+<script>
+  const swiper = new Swiper(document.getElementById("gallery"), {
+    spaceBetween: 10,
+    slidesPerView: 1,
+    centeredSlides:true,
+    lazyload: {
+      loadPrevNext: false,
+      loadPrevNextAmount: 1,
+      loadOnTransitionStart: false,
+      elementClass: "swiper-lazy",
+      loadingClass: "swiper-lazy-loading",
+      loadedClass: "swiper-lazy-loaded",
+      preloaderClass: "swiper-lazy-preloader"
+    },
+    navigation: {
+      prevEl: ".swiper-plugin-navigation-prevEl",
+      nextEl: ".swiper-plugin-navigation-nextEl"
+    },
+    plugins: [SwiperPluginNavigation, SwiperPluginLazyload]
+  })
+</script>

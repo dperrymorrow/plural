@@ -121,17 +121,6 @@ p.description {
 .polaroid:hover .caption {
   bottom: 0;
 }
-.experiences {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0 4rem;
-}
-.experiences .airbnb-embed-frame {
-  margin: none !important;
-}
 nav.top-bar img.logo {
   height: 100px;
   width: auto;
@@ -168,6 +157,18 @@ h6 {
     padding: 0;
   }
 }
+.workshop {
+  padding-bottom: 75px;
+}
+.workshop .workshop-description {
+  white-space: pre-wrap;
+  margin-bottom: 50px;
+}
+.workshop a.checkout {
+  background-color: #5fae93;
+  color: #fff;
+  padding: 25px;
+}
 @media screen and (max-width: 48em) {
   nav {
     flex-direction: column;
@@ -179,4 +180,7 @@ h6 {
     padding: 0;
     font-size: 1.3rem;
   }
+}
+.swiper-container {
+  overflow: hidden;
 }
