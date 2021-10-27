@@ -1,0 +1,100 @@
+<html lang="en" dir="ltr">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  
+    <title>Plural Collective | About</title>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+
+  <link href="styles.css?version=118" rel="stylesheet">
+  <link href="swiper.css?version=118" rel="stylesheet">
+</head>
+
+<body>
+  
+
+
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="workshops.html">Workshops</a>
+  <a href="https://squareup.com/gift/MLJX897CJRKYZ/order" target="_blank">Gift Cards</a>
+</nav>
+
+<div class="header">
+  <img class="logo" src="images/logo.png" />
+</div>
+
+  <section class="content workshop">
+
+    <div class="swiper-container" id="gallery">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        
+          <div class="swiper-slide" style="background-image: url('images/workshops/keychain.jpg?version=${meta.version}')">
+          <!--  <img src="images/workshops/keychain.jpg?version=118"/> -->
+          </div>
+        
+          <div class="swiper-slide" style="background-image: url('images/workshops/braided-bracelet.jpg?version=${meta.version}')">
+          <!--  <img src="images/workshops/braided-bracelet.jpg?version=118"/> -->
+          </div>
+        
+          <div class="swiper-slide" style="background-image: url('images/workshops/leather-shop.jpg?version=${meta.version}')">
+          <!--  <img src="images/workshops/leather-shop.jpg?version=118"/> -->
+          </div>
+        
+      </div>
+
+      
+        <button class="swiper-plugin-navigation-prevEl">❮ Prev</button>
+        <button class="swiper-plugin-navigation-nextEl">Next ❯</button>
+      
+    </div>
+
+    <h1>Mix and match leather bracelets and keychains</h1>
+
+    <p class="workshop-description">In this hands-on workshop presented by Purpose, you can choose between keychains and bracelets. You may choose to learn how to make a magic braided bracelet using latigo leather. Or, you can learn to dye leather and personalize a bracelet or keychain using metal stamps or embroidery. Mix and match ideas to complete 2 projects during class.</p>
+    <a class="checkout" href="https://square.link/u/wz3m83jv">View schedule / purchase</a>
+  </section>
+
+
+  
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/lazyload.min.js"></script>
+<script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
+
+<script>
+  const swiper = new Swiper(document.getElementById("gallery"), {
+    spaceBetween: 10,
+    slidesPerView: 1,
+    centeredSlides:true,
+    lazyload: {
+      loadPrevNext: false,
+      loadPrevNextAmount: 1,
+      loadOnTransitionStart: false,
+      elementClass: "swiper-lazy",
+      loadingClass: "swiper-lazy-loading",
+      loadedClass: "swiper-lazy-loaded",
+      preloaderClass: "swiper-lazy-preloader"
+    },
+    navigation: {
+      prevEl: ".swiper-plugin-navigation-prevEl",
+      nextEl: ".swiper-plugin-navigation-nextEl"
+    },
+    plugins: [SwiperPluginNavigation, SwiperPluginLazyload]
+  })
+</script>
+
+  
+
+  </body>
+</html>
