@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/dperrymorrow/plural#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "ejs": "^3.1.6",
     "image-downloader": "^4.0.2",
     "instagram-web-api": "^2.2.2",
