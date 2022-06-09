@@ -92,7 +92,7 @@ p.description
 .bio-container
   margin-top: $spacing
 
-.bio
+.bio, .feature
   .copy
     padding: ($spacing / 2)
     display: flex
@@ -182,6 +182,19 @@ h1, h2, h3, h4, h5, h6
   font-weight: bold
   color: $grayDark
   line-height: 1.3em
+
+section.featured-container
+  margin-top: $spacing
+  border-top: 1px solid lighten($grayLight, 30%)
+  background-color: lighten($grayLight, 50%)
+
+  h1
+    padding-top: 0
+    margin-top: -5.5rem
+
+  .feature a
+    display: block
+
 
 @media $media.mdDown
   section

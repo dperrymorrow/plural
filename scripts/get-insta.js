@@ -8,8 +8,6 @@ const imageDir = path.join(__dirname, "../docs/images");
 const dest = path.join(__dirname, "../_src/data/instagram.json");
 const { INSTA_USERNAME, INSTA_PASSWORD } = process.env;
 
-console.log(INSTA_USERNAME, INSTA_PASSWORD);
-
 const client = new Instagram({
   username: INSTA_USERNAME,
   password: INSTA_PASSWORD,
@@ -30,9 +28,7 @@ async function run() {
     }));
 
   await Promise.all(
-    posts.map((post) =>
-      download.image({ url: post.cdn, dest: `${imageDir}/instagram` })
-    )
+    posts.map((post) => download.image({ url: post.cdn, dest: `${imageDir}/instagram` })),
   );
   fs.writeFileSync(dest, JSON.stringify(posts, null, 2));
 }

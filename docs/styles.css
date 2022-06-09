@@ -63,20 +63,23 @@ p.description {
 .bio-container {
   margin-top: 25px;
 }
-.bio .copy {
+.bio .copy,
+.feature .copy {
   padding: 12.5px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 25px;
 }
-.bio .copy h3 {
+.bio .copy h3,
+.feature .copy h3 {
   border-bottom: 1px solid #c2c2c2;
   margin-bottom: 0;
   margin-top: 25px;
   padding-bottom: 12.5px;
 }
-.bio .copy a {
+.bio .copy a,
+.feature .copy a {
   margin-bottom: 8.333333333333334px;
 }
 .no-gutter {
@@ -156,6 +159,18 @@ h6 {
   font-weight: bold;
   color: #333;
   line-height: 1.3em;
+}
+section.featured-container {
+  margin-top: 25px;
+  border-top: 1px solid #d4d4d4;
+  background-color: #e1e1e1;
+}
+section.featured-container h1 {
+  padding-top: 0;
+  margin-top: -5.5rem;
+}
+section.featured-container .feature a {
+  display: block;
 }
 @media screen and (max-width: 64em) {
   section {
