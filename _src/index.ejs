@@ -6,55 +6,70 @@
 
     <div class="row no-gutter polaroid-grid">
       <% grid.forEach(photo => {%>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-          <div class="polaroid" style="background-image: url('<%= photo %>?version=1.1')"></div>
-        </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+        <div
+          class="polaroid"
+          style="background-image: url('<%= photo %>?version=1.1')"
+        ></div>
+      </div>
       <% }) %>
     </div>
 
     <section class="content">
-      <h1>Welcome to Plural Collective </h1>
-
-      <p>
-        Plural Collective is a sweet shop in the Sellwood neighborhood housing 9 local businesses featuring leather, coffee, plants, jewelry, kids clothes, bath and body products, pottery, cutting boards and ethically sourced goods from around the globe. Some of our products are made on site in our makers studios, and we offer monthly workshops in a variety of mediums. A perfect stop to shop local handmade for any member of the family.
-      </p>
-
       <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <h2>Store Hours</h2>
+        <div class="col-xs-12 col-md-8">
+          <h1>Welcome to Plural Collective</h1>
 
-          <table>
-            <tr>
-              <td><strong>Tuesday - Friday</strong></td>
-              <td>11:00-5:00</td>
-            </tr>
-            <tr>
-              <td><strong>Saturday</strong></td>
-              <td>10-5:00</td>
-            </tr>
-            <tr>
-              <td><strong>Sunday</strong></td>
-              <td>11-5</td>
-            </tr>
-            <tr>
-              <td><strong>Monday</strong></td>
-              <td>closed</td>
-            </tr>
-          </table>
+          <p>
+            Plural Collective is a sweet shop in the Sellwood neighborhood
+            housing 9 local businesses featuring leather, coffee, plants,
+            jewelry, kids clothes, bath and body products, pottery, cutting
+            boards and ethically sourced goods from around the globe. Some of
+            our products are made on site in our makers studios, and we offer
+            monthly workshops in a variety of mediums. A perfect stop to shop
+            local handmade for any member of the family.
+          </p>
+
+          <div class="row hours">
+            <div class="col-xs-12 col-sm-6">
+              <h2>Store Hours</h2>
+
+              <table>
+                <tr>
+                  <td><strong>Tuesday - Friday</strong></td>
+                  <td>11:00-5:00</td>
+                </tr>
+                <tr>
+                  <td><strong>Saturday</strong></td>
+                  <td>10-5:00</td>
+                </tr>
+                <tr>
+                  <td><strong>Sunday</strong></td>
+                  <td>11-5</td>
+                </tr>
+                <tr>
+                  <td><strong>Monday</strong></td>
+                  <td>closed</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+              <h2>Address</h2>
+              8012 SE 13th Ave.<br />
+              Portland, OR 97202<br />
+              (503) 206-8684<br />
+              <a href="mailto:pluralcollectivepdx@gmail.com"
+                >pluralcollectivepdx@gmail.com</a
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6">
-          <h2>Address</h2>
-          8012 SE 13th Ave.<br/>
-          Portland, OR 97202<br/>
-          (503) 206-8684<br/>
-          <a href="mailto:pluralcollectivepdx@gmail.com">pluralcollectivepdx@gmail.com</a>
+        <div class="col-xs-12 col-md-4">
+          <%- include("_partials/embeded-instagram") %>
         </div>
       </div>
-
     </section>
-
-    <%- include("_partials/instagram") %>
-
   </body>
 </html>

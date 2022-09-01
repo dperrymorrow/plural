@@ -172,6 +172,9 @@ section.featured-container h1 {
 section.featured-container .feature a {
   display: block;
 }
+.hours {
+  margin-bottom: 25px;
+}
 @media screen and (max-width: 64em) {
   section {
     padding: 2rem;

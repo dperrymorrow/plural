@@ -1,20 +1,20 @@
 
-$brandGreen = #8cc5b1
-$gray = #666
-$grayDark = #333
-$grayLight = lighten($gray, 60%)
-$bg = darken(#efefef, 2%)
-$gridHeight = 500px
-$navHeight = 50px
-$txtColor = darken(#777, 10%)
-$spacing = 25px
-$shadow = 0px 0px 10px 5px rgba(#666, 0.1)
+$brandGreen = #8cc5b1;
+$gray = #666;
+$grayDark = #333;
+$grayLight = lighten($gray, 60%);
+$bg = darken(#efefef, 2%);
+$gridHeight = 500px;
+$navHeight = 50px;
+$txtColor = darken(#777, 10%);
+$spacing = 25px;
+$shadow = 0px 0px 10px 5px rgba(#666, 0.1);
 $breakpoints = {
   xs: 30em,
   sm: 48em,
   md: 64em,
   lg: 75em
-}
+};
 $media = {
   xs: 'screen and (max-width: ' + $breakpoints.sm + ')',
   sm: 'screen and (min-width: ' + $breakpoints.sm + ') and (max-width: ' + $breakpoints.md + ')',
@@ -28,191 +28,235 @@ $media = {
   mdDown: 'screen and (max-width: ' + $breakpoints.md + ')',
   lgUp: 'screen and (min-width: ' + $breakpoints.lg + ')',
   lgDown: 'screen and (max-width: ' + $breakpoints.lg + ')'
+};
+
+html, body {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background-color: $bg;
+  position: relative;
+  color: $txtColor;
+  line-height: 1.3rem;
+
+  a {
+    color: darken($brandGreen, 30%);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
-html, body
-  font-family: 'Comfortaa', sans-serif
-  font-size: 16px
-  padding: 0
-  margin: 0
-  background-color: $bg
-  position: relative
-  color: $txtColor
-  line-height: 1.3rem
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  background-color: $brandGreen;
+  justify-content: center;
+  padding: 2rem 2rem 1.8rem 2rem;
+  backdrop-filter: blur(6px);
+}
 
-  a
-    color: darken($brandGreen, 30%)
-    text-decoration: none
+nav {
+  padding: 1rem;
+  background-color: darken($brandGreen, 20%);
+  border-bottom: 1px solid darken($brandGreen, 30%);
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
 
-    &:hover
-      text-decoration: underline
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(white, 0.7);
+    text-transform: uppercase;
+    padding: 0 1em;
 
-.header
-  box-sizing: border-box
-  width: 100%
-  display: flex
-  justify-content: left
-  background-color: $brandGreen
-  justify-content: center
-  padding: 2rem 2rem 1.8rem 2rem
-  backdrop-filter: blur(6px)
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
 
-nav
-  padding: 1rem
-  background-color: darken($brandGreen, 20%)
-  border-bottom: 1px solid darken($brandGreen, 30%)
-  position: sticky
-  top: 0
-  z-index: 4
-  display: flex
-  justify-content: center
+p.description {
+  line-height: 1.4rem;
+}
 
-  a
-    font-weight: bold
-    text-decoration: none
-    color: rgba(white, 0.7)
-    text-transform: uppercase
-    padding: 0 1em
+.header .logo {
+  height: 80px;
+  width: auto;
+}
 
-    &:hover
-      color: white
-      text-decoration: none
+.logo img {
+  height: 50px;
+  width: auto;
+}
 
-p.description
-  line-height: 1.4rem
+.bio-container {
+  margin-top: $spacing;
+}
 
-.header .logo
-  height: 80px
-  width: auto
+.bio, .feature {
+  .copy {
+    padding: ($spacing / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: $spacing;
 
-.logo img
-  height: 50px
-  width: auto
+    h3 {
+      border-bottom: 1px solid $grayLight;
+      margin-bottom: 0;
+      margin-top: $spacing;
+      padding-bottom: ($spacing / 2);
+    }
 
-.bio-container
-  margin-top: $spacing
+    a {
+      margin-bottom: ($spacing / 3);
+    }
+  }
+}
 
-.bio, .feature
-  .copy
-    padding: ($spacing / 2)
-    display: flex
-    flex-direction: column
-    justify-content: flex-start
-    margin-bottom: $spacing
+.no-gutter {
+  margin: 0;
 
-    h3
-      border-bottom: 1px solid $grayLight
-      margin-bottom: 0
-      margin-top: $spacing
-      padding-bottom: ($spacing / 2)
+  > div[class^='col-'] {
+    padding: 0;
+  }
+}
 
-    a
-      margin-bottom: ($spacing / 3)
+.polaroid-grid {
+  border: 5px solid white;
+  box-shadow: $shadow;
+}
 
-.no-gutter
-  margin: 0
+.polaroid {
+  border: 5px solid white;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 
-  > div[class^='col-']
-    padding: 0
+  &.single {
+    border-width: 10px;
+    box-shadow: $shadow;
+  }
 
-.polaroid-grid
-  border: 5px solid white
-  box-shadow: $shadow
+  .caption {
+    position: absolute;
+    background-color: rgba(black, 0.7);
+    width: 100%;
+    bottom: -200px;
+    left: 0;
+    padding: $spacing;
+    color: white;
+    text-decoration: none;
+    transition: bottom 0.2s ease;
 
-.polaroid
-  border: 5px solid white
-  width: 100%
-  height: 300px
-  background-repeat: no-repeat
-  background-position: center center
-  background-size: cover
-  box-sizing: border-box
-  position: relative
-  overflow: hidden
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
-  &.single
-    border-width: 10px
-    box-shadow: $shadow
+  &:hover .caption {
+    bottom: 0;
+  }
+}
 
-  .caption
-    position: absolute
-    background-color: rgba(black, 0.7)
-    width: 100%
-    bottom: -200px
-    left: 0
-    padding: $spacing
-    color: white
-    text-decoration: none
-    transition: bottom 0.2s ease
+.experiences {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 4rem;
 
-    &:hover
-      text-decoration: underline
+  .airbnb-embed-frame {
+    margin: none !important;
+  }
+}
 
-  &:hover .caption
-    bottom: 0
+nav.top-bar {
+  img.logo {
+    height: 100px;
+    width: auto;
+  }
+}
 
-.experiences
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  justify-content: flex-start
-  align-items: flex-start
-  padding: 0 4rem
+section {
+  padding: 4rem;
 
-  .airbnb-embed-frame
-    margin: none !important
+  p {
+    line-height: 2rem;
+  }
+}
 
-nav.top-bar
-  img.logo
-    height: 100px
-    width: auto
+img.insta-logo {
+  height: 30px;
+  width: auto;
+  margin: 0.5rem;
+}
 
-section
-  padding: 4rem
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: $grayDark;
+  line-height: 1.3em;
+}
 
-  p
-    line-height: 2rem
+section.featured-container {
+  margin-top: $spacing;
+  border-top: 1px solid lighten($grayLight, 30%);
+  background-color: lighten($grayLight, 50%);
 
-img.insta-logo
-  height: 30px
-  width: auto
-  margin: 0.5rem
+  h1 {
+    padding-top: 0;
+    margin-top: -5.5rem;
+  }
 
-h1, h2, h3, h4, h5, h6
-  font-weight: bold
-  color: $grayDark
-  line-height: 1.3em
+  .feature a {
+    display: block;
+  }
+}
 
-section.featured-container
-  margin-top: $spacing
-  border-top: 1px solid lighten($grayLight, 30%)
-  background-color: lighten($grayLight, 50%)
+.hours {
+  margin-bottom: $spacing;
+}
 
-  h1
-    padding-top: 0
-    margin-top: -5.5rem
+@media $media.mdDown {
+  section {
+    padding: 2rem;
+  }
 
-  .feature a
-    display: block
+  .experiences {
+    padding: 0;
+  }
 
+  .bio .copy {
+    padding: 0;
+  }
+}
 
-@media $media.mdDown
-  section
-    padding: 2rem
+@media $media.smDown {
+  nav {
+    flex-direction: column;
+    position: normal;
+    top: auto;
 
-  .experiences
-    padding: 0
-
-  .bio .copy
-    padding: 0
-
-@media $media.smDown
-  nav
-    flex-direction: column
-    position: normal
-    top: auto
-
-    a
-      margin: ($spacing / 3)
-      padding: 0
-      font-size: 1.3rem
+    a {
+      margin: ($spacing / 3);
+      padding: 0;
+      font-size: 1.3rem;
+    }
+  }
+}
