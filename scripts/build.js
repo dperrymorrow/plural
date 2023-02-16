@@ -21,14 +21,14 @@ files.forEach((fileName) => {
     {
       instagram,
       grid,
-      bios,
+      bios: bios.sort((a, b) => a.name.localeCompare(b.name)),
       experiences,
       featured,
     },
     {},
     (err, str) => {
       fs.writeFileSync(path.join(dest, fileName.replace(".ejs", ".html")), str);
-    }
+    },
   );
 });
 
@@ -38,5 +38,5 @@ stylus.render(
   (err, css) => {
     if (err) throw err;
     fs.writeFileSync(path.join(dest, "styles.css"), css);
-  }
+  },
 );
