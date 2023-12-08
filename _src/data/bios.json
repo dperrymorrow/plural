@@ -68,5 +68,12 @@
     "instagram": "atticjournals",
     "website": "http://www.atticjournals.com/",
     "description": "Founded in 2004, thru local Portlanders Michelle & Miguel, Attic Journals is on a mission to give old discarded books new life, not necessarily in their previous form. Each book retains its original character & charm, then dependent on specific materials, they are transformed into notebooks, garlands, coasters & even earrings! You can't even imagine what they accomplish with floppy disks!"
+  },
+  {
+    "name": "Tree to Table",
+    "description": "At Tree to Table we salvage urban trees in and around Portland, Oregon. We slab, mill, process and dry over a multi-year process. Specializing in re-purposing and creating live edge tables, shelves, charcuterie boards, and wood art pieces.",
+    "website": "https://www.treetotablepdx.com/",
+    "img": "images/bios/tree-to-table.jpg",
+    "instagram": "TreeToTable.pdx"
   }
 ]
